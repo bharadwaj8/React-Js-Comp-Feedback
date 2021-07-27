@@ -1,0 +1,51 @@
+.bg {
+  background-image: linear-gradient(to right, #ffeeee, #ffc0bb);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  height: 100vh;
+}
+.feedback-question {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+}
+.heading {
+  color: #0f172a;
+  text-align: center;
+}
+.emoji-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.emoji {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+.button {
+  background-color: transparent;
+  border: 0px;
+}
+.emoji-icon {
+  width: 80px;
+}
+.desc {
+  color: #1e293b;
+  text-align: center;
+}
+
+.feedback-answer {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
