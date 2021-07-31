@@ -1,6 +1,5 @@
 import {Component} from 'react'
 import './index.css'
-import FeedbackQuestion from '../FeedbackQuestion'
 
 class Feedback extends Component {
   state = {emotion: 1}
@@ -24,11 +23,20 @@ class Feedback extends Component {
             </h1>
             <ul className="emoji-container">
               {emojis.map(each => (
-                <FeedbackQuestion
-                  each={each}
-                  key={each.id}
-                  setEmotion={this.setEmotion}
-                />
+                <li key={each.id} className="emoji">
+                  <button
+                    className="button"
+                    type="button"
+                    onClick={this.setEmotion}
+                  >
+                    <img
+                      src={each.imageUrl}
+                      alt={each.name}
+                      className="emoji-icon"
+                    />
+                  </button>
+                  <p className="desc">{each.name}</p>
+                </li>
               ))}
             </ul>
           </div>
