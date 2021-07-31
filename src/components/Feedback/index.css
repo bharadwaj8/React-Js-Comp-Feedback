@@ -49,3 +49,19 @@
   justify-content: center;
   align-items: center;
 }
+
+.emoji {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+.button {
+  background-color: transparent;
+  border: 0px;
+}
+.desc {
+  color: #1e293b;
+  text-align: center;
+}
